@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class P140_SumaDigitos {
+
+	public static void main(String[] args) {
+
+		int a, b, c, d, e, h, g, total;
+		String i, numero, n1, z;
+		Scanner teclado = new Scanner(System.in);
+		do {
+		i = teclado.next();
+		b = 10;
+		e = 0;
+		h=0;
+		total=0;
+		z = i.substring(0,1);
+		if(z.contentEquals("-")) {
+			
+		}
+		else {
+			int x = 0;
+			int y = 1;
+			a = i.length();
+			int entero;
+			while (x != a) {
+
+				numero = i.substring(x, y);
+				entero = Integer.parseInt(numero);
+				System.out.printf("%d ",entero);
+				x++;
+				y++;
+				total=total+entero;
+				if(x!=a) {
+					System.out.printf("+ ");
+				}
+				else {
+					System.out.printf("= ");
+				}
+			}
+		System.out.println(total);
+		}
+		g = Integer.parseInt(i);
+		}while(g>-1);
+	}
+
+}
