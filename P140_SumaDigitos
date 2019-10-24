@@ -4,14 +4,11 @@ public class P140_SumaDigitos {
 
 	public static void main(String[] args) {
 
-		int a, b, c, d, e, h, g, total;
+		int a, g, total;
 		String i, numero, n1, z;
 		Scanner teclado = new Scanner(System.in);
 		do {
 		i = teclado.next();
-		b = 10;
-		e = 0;
-		h=0;
 		total=0;
 		z = i.substring(0,1);
 		if(z.contentEquals("-")) {
